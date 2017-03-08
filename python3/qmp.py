@@ -99,8 +99,11 @@ class QmpClient:
         self._returnProc()
 
     def cmd_conti(self):
+        self.cmd_cont()
+
+    def cmd_cont(self):
         assert self.sockf is not None
-        json.dump({"execute": "conti"}, self.sockf)
+        json.dump({"execute": "cont"}, self.sockf)
         self._returnProc()
 
     def cmd_system_powerdown(self):
