@@ -178,93 +178,92 @@ class QmpClient:
         self._returnProc()
 
     def cmd_eject(self, devname, force=False):
-        assert False		# not implemented yet
+        raise NotImplementedError()
 
     def cmd_change(self):
-        assert False		# not implemented yet
+        raise NotImplementedError()
 
     def cmd_screen_dump(self, filename):
-        assert False		# not implemented yet
+        raise NotImplementedError()
 
     def cmd_send_key(self, keys):
-        assert False		# not implemented yet
+        raise NotImplementedError()
 
     def cmd_cpu(self, cpu_id):
-        assert False		# not implemented yet
+        raise NotImplementedError()
 
     def cmd_cpu_add(self, cpu_id):
-        assert False		# not implemented yet
+        raise NotImplementedError()
 
     def cmd_memsave(self, cpu_id):
-        assert False		# not implemented yet
+        raise NotImplementedError()
 
     def cmd_pmemsave(self, cpu_id):
-        assert False		# not implemented yet
+        raise NotImplementedError()
 
     def cmd_inject_nmi(self):
-        assert False		# not implemented yet
+        raise NotImplementedError()
 
     def cmd_ringbuf_write(self):
-        assert False		# not implemented yet
+        raise NotImplementedError()
 
     def cmd_ringbuf_read(self):
-        assert False		# not implemented yet
+        raise NotImplementedError()
 
     def query_version(self):
-        assert False		# not implemented yet
+        raise NotImplementedError()
 
     def query_name(self):
-        assert False		# not implemented yet
+        raise NotImplementedError()
 
     def query_uuid(self):
-        assert False		# not implemented yet
+        raise NotImplementedError()
 
     def query_balloon(self):
         # return int, async?
-
-        assert False		# not implemented yet
+        raise NotImplementedError()
 
     def query_commands(self):
-        assert False		# not implemented yet
+        raise NotImplementedError()
 
     def query_command_line_options(self):
-        assert False		# not implemented yet
+        raise NotImplementedError()
 
     def query_events(self):
-        assert False		# not implemented yet
+        raise NotImplementedError()
 
     def query_chardev(self):
-        assert False		# not implemented yet
+        raise NotImplementedError()
 
     def query_chardev_backends(self):
-        assert False		# not implemented yet
+        raise NotImplementedError()
 
     def query_block(self):
-        assert False		# not implemented yet
+        raise NotImplementedError()
 
     def query_blockstats(self):
-        assert False		# not implemented yet
+        raise NotImplementedError()
 
     def query_cpus(self):
-        assert False		# not implemented yet
+        raise NotImplementedError()
 
     def query_iothreads(self):
-        assert False		# not implemented yet
+        raise NotImplementedError()
 
     def query_pci(self):
-        assert False		# not implemented yet
+        raise NotImplementedError()
 
     def query_kvm(self):
-        assert False		# not implemented yet
+        raise NotImplementedError()
 
     def query_mice(self):
-        assert False		# not implemented yet
+        raise NotImplementedError()
 
     def query_vnc(self):
-        assert False		# not implemented yet
+        raise NotImplementedError()
 
     def query_spice(self):
-        assert False		# not implemented yet
+        raise NotImplementedError()
 
     def _connectBottomHalf(self):
         self._wtfJsonLoad(self.sockf)
